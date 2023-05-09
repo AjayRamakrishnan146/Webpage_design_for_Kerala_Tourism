@@ -22,9 +22,9 @@
           <li class="nav-item me-4">
             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
           </li>
-          <!-- <li class="nav-item me-4">
-            <a class="nav-link" href="#">Sign Up</a>
-          </li> -->
+          <li class="nav-item me-4">
+            <a class="nav-link" href="./sign-up.html">Sign Up</a>
+          </li>
           <li class="nav-item me-4">
             <a class="nav-link" href="./login.html">Log In</a>
           </li>
@@ -41,32 +41,37 @@
       </div>
     </div>
   </nav>
-      <form class="formsheet1 mx-auto p-4 mb-3 mt-3">
-        <div class="mb-3">
-          <h3 class="text-center">Adventure awaits - sign up now for the trip of a lifetime!</h3><br>
-          <label for="exampleInputEmail1" class="form-label">Enter your name</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Enter your email</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Phone number</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Create your Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Confirm your password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-primary ms-4">Sign Up</button>
+  <div class="container">
+    <div class="row  mx-auto mb-3 p-5">
+      <form class="form1  p-5 mx-auto mt-3" onsubmit="return validate()">
+        <h3 class="text-center">Adventure awaits - sign up now for the trip of a lifetime!</h3><br>
+        <lable>Enter your name</lable><br>
+        <input type="text" id="name" class="form-control form-control-lg" placeholder="name" >
+        <span id="error1"></span><br>
+        <br>
+        <lable>Enter your email address</lable><br>
+        <input type="text" id="email" class="form-control form-control-lg"placeholder="email">
+        <span id="error2"></span><br>
+        <br>
+        <lable>Enter your phone number</lable><br>
+        <input type="text" id="phonenumber" class="form-control form-control-lg"placeholder="phone">
+        <span id="error3"></span><br>
+        <br>
+        <lable>Create your Password</lable><br>
+        <input type="password" id="password"class="form-control form-control-lg" placeholder="password">
+        <span id="error4"></span>
+        <span id="error5"></span><br>
+        <br>
+        <lable>Confirm your Password</lable><br>
+        <input type="password" id="pwd" class="form-control form-control-lg" placeholder="password">
+        <span id="error6"></span><br><br>
+        <button class="btn btn-primary">Sign up</button>
       </form>
+    </div>
+  </div>
       <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
         <p class="text-center">All rights reserved © Kerala Tourism 2023</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

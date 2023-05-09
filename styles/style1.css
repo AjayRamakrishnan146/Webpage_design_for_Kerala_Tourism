@@ -25,5 +25,13 @@ body{
     width:50%;
 }
 #sticky-footer{
-    height:50px
+    height:50px;
+}
+.form1{
+        border:5px solid gray ;
+        background-color: beige;
+        width:600px;
+        border-radius: 50px;
+        
+        
 }
